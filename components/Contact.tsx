@@ -32,7 +32,7 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="section-title gradient-text">Get In Touch</h2>
-          <p className="section-subtitle">Have a project in mind? Let's talk about how we can help</p>
+          <p className="section-subtitle">Have a project in mind? Let&apos;s talk about how we can help</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">

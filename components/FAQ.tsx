@@ -44,7 +44,7 @@ export default function FAQ() {
           className="text-center mb-16"
         >
           <h2 className="section-title gradient-text">Frequently Asked Questions</h2>
-          <p className="section-subtitle">Got questions? We've got answers</p>
+          <p className="section-subtitle">Got questions? We&apos;ve got answers</p>
         </motion.div>
 
         <div className="space-y-4">

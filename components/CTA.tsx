@@ -46,7 +46,7 @@ export default function CTA() {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="text-lg md:text-xl mb-8 text-white/90"
         >
-          Let's discuss how we can help you achieve your technology goals and drive your business
+          Let&apos;s discuss how we can help you achieve your technology goals and drive your business
           forward
         </motion.p>
         

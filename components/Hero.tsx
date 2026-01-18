@@ -1,6 +1,7 @@
+
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
 import gsap from 'gsap'
@@ -9,8 +10,15 @@ export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null)
   const circle1Ref = useRef<HTMLDivElement>(null)
   const circle2Ref = useRef<HTMLDivElement>(null)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  useEffect(() => {
+    if (!mounted) return
+
     // GSAP animations for background circles
     if (circle1Ref.current && circle2Ref.current) {
       gsap.to(circle1Ref.current, {
@@ -33,7 +41,7 @@ export default function Hero() {
         ease: 'power1.inOut',
       })
     }
-  }, [])
+  }, [mounted])
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -85,6 +93,29 @@ export default function Hero() {
         ref={circle2Ref}
         className="absolute bottom-0 right-0 w-80 h-80 md:w-[500px] md:h-[500px] bg-white/10 rounded-full blur-3xl"
       />
+      {/* Floating particles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {mounted && [...Array(20)].map((_, i) => (
+          <motion.div
+            key={i}
+            initial={{
+              x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
+              y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 800),
+              scale: Math.random() * 0.5 + 0.5,
+            }}
+            animate={{
+              y: [null, Math.random() * -100 - 50],
+              opacity: [0, 1, 0],
+            }}
+            transition={{
+              duration: Math.random() * 3 + 3,
+              repeat: Infinity,
+              delay: Math.random() * 2,
+            }}
+            className="absolute w-2 h-2 bg-white/30 rounded-full"
+          />
+        ))}
+      </div>
 
       {/* Floating particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

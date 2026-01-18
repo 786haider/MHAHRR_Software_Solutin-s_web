@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: 'MHAHRR Software Solutions | Custom Software Development Company',
   description: 'Leading software development company specializing in web development, mobile apps, cloud solutions, AI/ML, and digital transformation services.',
   keywords: 'software development, web development, mobile apps, cloud solutions, AI, machine learning',
+  icons: {
+    icon: '/logo.png',
+  },
 }
 
 export default function RootLayout({
