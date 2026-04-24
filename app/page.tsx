@@ -1,17 +1,19 @@
 'use client'
 
-import Header from '@/components/Header'
-import Hero from '@/components/Hero'
-import Stats from '@/components/Stats'
-import Services from '@/components/Services'
-import About from '@/components/About'
-import Values from '@/components/Values'
-import Portfolio from '@/components/Portfolio'
-import Technologies from '@/components/Technologies'
-import FAQ from '@/components/FAQ'
-import CTA from '@/components/CTA'
-import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
+import dynamic from 'next/dynamic'
+
+const Header = dynamic(() => import('@/components/Header'), { ssr: false })
+const Hero = dynamic(() => import('@/components/Hero'), { ssr: false })
+const Stats = dynamic(() => import('@/components/Stats'), { ssr: false })
+const Services = dynamic(() => import('@/components/Services'), { ssr: false })
+const About = dynamic(() => import('@/components/About'), { ssr: false })
+const Values = dynamic(() => import('@/components/Values'), { ssr: false })
+const Portfolio = dynamic(() => import('@/components/Portfolio'), { ssr: false })
+const Technologies = dynamic(() => import('@/components/Technologies'), { ssr: false })
+const FAQ = dynamic(() => import('@/components/FAQ'), { ssr: false })
+const CTA = dynamic(() => import('@/components/CTA'), { ssr: false })
+const Contact = dynamic(() => import('@/components/Contact'), { ssr: false })
+const Footer = dynamic(() => import('@/components/Footer'), { ssr: false })
 
 export default function Home() {
   return (

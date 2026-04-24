@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -28,10 +29,10 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link to="home" smooth duration={500} className="cursor-pointer flex items-center gap-3">
-              <img src="/logo.png" alt="MHAHRR Logo" className="w-10 h-10 object-contain" />
+              <Image src="/logo.png" alt="MHAHRR Logo" width={40} height={40} className="object-contain" />
               <div className="flex flex-col">
                 <h1 className="text-white text-2xl font-bold leading-none">MHAHRR</h1>
-                <span className="text-white/70 text-xs">Innovative Software Solution's</span>
+                <span className="text-white/70 text-xs">Innovative Software Solution&rsquo;s</span>
               </div>
             </Link>
           </div>
