@@ -7,6 +7,7 @@ const Hero = dynamic(() => import('@/components/Hero'), { ssr: false })
 const Stats = dynamic(() => import('@/components/Stats'), { ssr: false })
 const Services = dynamic(() => import('@/components/Services'), { ssr: false })
 const About = dynamic(() => import('@/components/About'), { ssr: false })
+const Founder = dynamic(() => import('@/components/Founder'), { ssr: false })
 const Values = dynamic(() => import('@/components/Values'), { ssr: false })
 const Portfolio = dynamic(() => import('@/components/Portfolio'), { ssr: false })
 const Technologies = dynamic(() => import('@/components/Technologies'), { ssr: false })
@@ -23,6 +24,7 @@ export default function Home() {
       <Stats />
       <Services />
       <About />
+      <Founder />
       <Values />
       <Portfolio />
       <Technologies />

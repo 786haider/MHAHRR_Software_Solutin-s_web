@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -13,11 +14,9 @@ export default function Footer() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <div className="flex items-center mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">M</span>
-              </div>
-              <span className="ml-2 text-xl font-display font-bold text-white">MHAHRR</span>
+            <div className="flex items-center gap-3 mb-4">
+              <Image src="/logo.png" alt="MHAHRR Logo" width={40} height={40} className="object-contain" />
+              <span className="text-xl font-display font-bold text-white">MHAHRR Software Solutions</span>
             </div>
             <p className="text-sm">
               Leading software development company transforming businesses with cutting-edge technology.

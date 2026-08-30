@@ -116,31 +116,6 @@ export default function Hero() {
           />
         ))}
       </div>
-
-      {/* Floating particles */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
-              scale: Math.random() * 0.5 + 0.5,
-            }}
-            animate={{
-              y: [null, Math.random() * -100 - 50],
-              opacity: [0, 1, 0],
-            }}
-            transition={{
-              duration: Math.random() * 3 + 3,
-              repeat: Infinity,
-              delay: Math.random() * 2,
-            }}
-            className="absolute w-2 h-2 bg-white/30 rounded-full"
-          />
-        ))}
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           variants={containerVariants}

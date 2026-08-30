@@ -70,6 +70,16 @@ export default function Header() {
               </li>
               <li>
                 <Link
+                  to="founder"
+                  smooth
+                  duration={500}
+                  className="text-white hover:text-primary-400 transition-colors cursor-pointer"
+                >
+                  Founder
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="contact"
                   smooth
                   duration={500}
