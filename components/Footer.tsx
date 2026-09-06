@@ -77,20 +77,19 @@ export default function Footer() {
           >
             <h4 className="text-white font-bold mb-4">Connect</h4>
             <div className="flex space-x-4">
-              {['L', 'G'].map((letter, i) => (
-                <motion.a
-                  key={i}
-                  href="#"
-                  whileHover={{ scale: 1.2, rotate: 10 }}
-                  className="hover:text-primary-400 transition"
-                >
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <text x="50%" y="50%" textAnchor="middle" dy=".3em" fontSize="14" fontWeight="bold">
-                      {letter}
-                    </text>
-                  </svg>
-                </motion.a>
-              ))}
+              <motion.a
+                href="https://www.linkedin.com/in/haider-hussain-siddique-501409397/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bvq1X7KN7TEGl7uA9fiNWeA%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Profile"
+                whileHover={{ scale: 1.15, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-10 h-10 rounded-full bg-gray-800 hover:bg-[#0A66C2] text-gray-300 hover:text-white flex items-center justify-center transition-all duration-300 shadow-md"
+              >
+                <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.64 1.64 0 0 0-1.66 1.63 1.64 1.64 0 0 0 1.66 1.63 1.64 1.64 0 0 0 1.65-1.63 1.64 1.64 0 0 0-1.65-1.63Z" />
+                </svg>
+              </motion.a>
             </div>
           </motion.div>
         </div>

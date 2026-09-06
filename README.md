@@ -188,8 +188,9 @@ This is a custom website project. For modifications:
 ## 📞 Support
 
 For questions or support:
-- Email: info@mhahrr.com
-- Phone: +92 300 1234567
+- Email: haiderhussainsiddique@gmail.com
+- Phone: +92 3101318508, +92 3107617396
+- LinkedIn: https://www.linkedin.com/in/haider-hussain-siddique-501409397/
 
 ---
 

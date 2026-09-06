@@ -77,7 +77,7 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                  placeholder="+92 300 1234567"
+                  placeholder="+92 310 1318508"
                 />
               </div>
 
@@ -134,22 +134,34 @@ export default function Contact() {
               <h3 className="text-2xl font-display font-bold text-gray-900 mb-6">Contact Information</h3>
               <div className="space-y-4">
                 <motion.div whileHover={{ x: 5 }} className="flex items-start">
-                  <svg className="w-6 h-6 text-primary-500 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-primary-500 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                   <div>
                     <p className="font-semibold text-gray-900">Phone</p>
-                    <p className="text-gray-600">+92 300 1234567</p>
+                    <div className="flex flex-col space-y-1">
+                      <a href="tel:+923101318508" className="text-gray-600 hover:text-primary-600 transition-colors">
+                        +92 3101318508
+                      </a>
+                      <a href="tel:+923107617396" className="text-gray-600 hover:text-primary-600 transition-colors">
+                        +92 3107617396
+                      </a>
+                    </div>
                   </div>
                 </motion.div>
 
                 <motion.div whileHover={{ x: 5 }} className="flex items-start">
-                  <svg className="w-6 h-6 text-primary-500 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-primary-500 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   <div>
                     <p className="font-semibold text-gray-900">Email</p>
-                    <p className="text-gray-600">info@mhahrr.com</p>
+                    <a
+                      href="mailto:haiderhussainsiddique@gmail.com"
+                      className="text-gray-600 hover:text-primary-600 transition-colors break-all"
+                    >
+                      haiderhussainsiddique@gmail.com
+                    </a>
                   </div>
                 </motion.div>
 
@@ -177,18 +189,20 @@ export default function Contact() {
 
             <div>
               <h3 className="text-2xl font-display font-bold text-gray-900 mb-6">Follow Us</h3>
-              <div className="flex space-x-4">
-                {['Twitter', 'LinkedIn', 'GitHub'].map((social, i) => (
-                  <motion.a
-                    key={social}
-                    href="#"
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow"
-                  >
-                    <span className="text-xs font-bold">{social.charAt(0)}</span>
-                  </motion.a>
-                ))}
+              <div className="flex items-center space-x-4">
+                <motion.a
+                  href="https://www.linkedin.com/in/haider-hussain-siddique-501409397/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bvq1X7KN7TEGl7uA9fiNWeA%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn Profile"
+                  whileHover={{ scale: 1.1, rotate: 3 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="w-11 h-11 bg-[#0A66C2] hover:bg-[#004182] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.64 1.64 0 0 0-1.66 1.63 1.64 1.64 0 0 0 1.66 1.63 1.64 1.64 0 0 0 1.65-1.63 1.64 1.64 0 0 0-1.65-1.63Z" />
+                  </svg>
+                </motion.a>
               </div>
             </div>
           </motion.div>
